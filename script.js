@@ -142,8 +142,8 @@ function handleFormSubmit(formId, successId) {
             }
         })
         .catch(error => {
-            // Show a friendly alert if Formspree is not yet configured
-            alert('Thank you! To enable email delivery, please set up your free Formspree account and replace YOUR_FORM_ID in index.html. Visit https://formspree.io to get started.');
+            // Show a friendly alert if submission fails
+            alert('Oops! There was a problem submitting your form. Please try again later.');
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
